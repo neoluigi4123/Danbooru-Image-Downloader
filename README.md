@@ -1,6 +1,6 @@
 # Gelbooru Image Downloader
 
-A Python client that uses the Gelbooru API to download images with specified tags.
+A Python client that uses the Gelbooru API to download images with specified tags. Can download image, video, gifs....
 
 ![screencap](https://github.com/user-attachments/assets/69a499f8-79a4-469e-948d-b640e80da0ff)
 
