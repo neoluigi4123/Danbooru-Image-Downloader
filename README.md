@@ -4,6 +4,12 @@ A Python client that uses the Gelbooru API to download images with specified tag
 
 ![screencap](https://github.com/user-attachments/assets/69a499f8-79a4-469e-948d-b640e80da0ff)
 
+## How to install it
+
+You must verify your api key and user id from gelbooru [here](https://github.com/neoluigi4123/Gelbooru-Image-Downloader/edit/main/README.md#how-to-setup-your-gelbooru-api-key-and-user-id).
+
+and once its done, just download the zip file, run the install.bat then you're good to go
+
 ## How It Works
 
 ### Tags
