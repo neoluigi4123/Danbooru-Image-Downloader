@@ -1,3 +1,5 @@
+(current version is 1.0)
+
 # Gelbooru Image Downloader
 
 A Python client that uses the Gelbooru API to download images with specified tags. Can download image, video, gifs....
