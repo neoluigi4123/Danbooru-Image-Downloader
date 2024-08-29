@@ -12,7 +12,8 @@ You must verify your api key and user id from gelbooru [here](https://github.com
 
 and once its done, just follow the instruction in the [last release](https://github.com/neoluigi4123/Gelbooru-Image-Downloader/releases/latest) then you're good to go!
 
-However, if you want to use an older version of the software, you can go over  the release tab on the right, then chose your version.. Good luck! ![image](https://github.com/user-attachments/assets/da2f524c-178d-46f3-b609-e8a65f8e25fa)
+![image](https://github.com/user-attachments/assets/da2f524c-178d-46f3-b609-e8a65f8e25fa)
+However, if you want to use an older version of the software, you can go over  the release tab on the right, then chose your version.. Good luck!
 
 
 
