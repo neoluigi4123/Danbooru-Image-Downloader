@@ -245,7 +245,7 @@ def stop_download():
     stop_event.set()
     process_var.set("Stopping download...")
 
-def toggle_max_images_entry():
+def toggle_max_images_entry(*args):
     if max_images_checkbox_var.get():
         max_images_entry.config(state=NORMAL)
     else:
