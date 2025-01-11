@@ -1,6 +1,6 @@
 (current version is 2.0)
 
-## Please use the Danbooru.py as the gelbooru api doesn't seem to work correctly anymore. The latest install.bat already ise it.
+## Please use the Danbooru.py as the gelbooru api doesn't seem to work correctly anymore. The latest install.bat already use it.
 
 # Danbooru Image Downloader
 
