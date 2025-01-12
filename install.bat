@@ -18,37 +18,31 @@ if %errorlevel% neq 0 (
     python -m ensurepip --upgrade
 )
 
-:: Check if aiohttp is installed
-python -m pip show aiohttp >nul 2>&1
-if %errorlevel% neq 0 (
-    echo aiohttp is not installed.
-    echo Installing aiohttp...
-    python -m pip install aiohttp
-)
-
-:: Check if pygelbooru is installed
-python -m pip show pygelbooru >nul 2>&1
-if %errorlevel% neq 0 (
-    echo pygelbooru is not installed.
-    echo Installing pygelbooru...
-    python -m pip install pygelbooru
+:: Check and install required libraries
+set LIBRARIES=os asyncio aiohttp requests webbrowser tkinter threading
+for %%L in (%LIBRARIES%) do (
+    python -m pip show %%L >nul 2>&1
+    if %errorlevel% neq 0 (
+        echo Installing %%L...
+        python -m pip install %%L
+    )
 )
 
 :: Download the "latest" file to determine the latest version of the script
 echo Downloading the latest version information...
-curl -L -o latest_version.txt https://raw.githubusercontent.com/neoluigi4123/Gelbooru-Image-Downloader/main/latest
+curl -L -o latest_version.txt https://raw.githubusercontent.com/neoluigi4123/Danbooru-Image-Downloader/main/latest
 
 :: Read the latest version number from the file
 set /p VERSION=<latest_version.txt
 echo Latest version is %VERSION%
 
 :: Construct the download URL based on the version number
-set DOWNLOAD_URL=https://raw.githubusercontent.com/neoluigi4123/Gelbooru-Image-Downloader/main/gelbooru_image_downloader_%VERSION%.py
+set DOWNLOAD_URL=https://raw.githubusercontent.com/neoluigi4123/Danbooru-Image-Downloader/main/danbooru_%VERSION%.py
 echo Downloading %DOWNLOAD_URL%...
-curl -L -o gelbooru_image_downloader.py %DOWNLOAD_URL%
+curl -L -o danbooru.py %DOWNLOAD_URL%
 
 :: Launch the app
-echo Launching gelbooru_image_downloader.py...
-python gelbooru_image_downloader.py
+echo Launching danbooru.py...
+python danbooru.py
 
 pause
