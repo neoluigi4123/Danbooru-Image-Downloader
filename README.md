@@ -34,3 +34,10 @@ Check this option if you want to automatically open the folder with the download
 
 ### Fast Download
 Because Gelbooru cannot send 100 images at the speed of light, there is some delay to ensure that the data is correctly downloaded and the server doesn't block the process. You can use "Fast Download" to download a smaller amount of images faster (500-1000), but this will be less accurate and is more likely to crash.
+
+## To Do List
+- Fix the tag function to download with multiple tag (50% done)
+- Fix quick download
+- Add the 'clean' function back to remove any duplicated images
+
+- multiple tag downloader (download images from tag 1, while downloading images from tag 2 in another thread, etc)
