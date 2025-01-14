@@ -24,7 +24,7 @@ However, if you want to use an older version of the software, you can go over th
 Enter your tags in the first text box. Tags should not contain any underscores (_) and must be comma-separated. The tags must also exist on Gelbooru; any typo or non-existent tag won't work.
 
 ### Custom Directory
-You can use any directory you want by checking the "Use Custom Directory" button, then either paste any directory or browse for one with the "Browse" button. The app will automatically use `C:/Users/pc/Pictures/tag` if you don't specify a custom one.
+You can use any directory you want by checking the "Use Custom Directory" button, then either paste any directory or browse for one with the "Browse" button. The app will automatically use `C:/Users/[name]/Pictures/tag` if you don't specify a custom one.
 
 ### Download a Specific Number of Images
 If unchecked, you'll download every image that can be found with the tags you entered. To download a specific number of images, you can check "Limit Max Images" and then input the desired number.
@@ -33,7 +33,7 @@ If unchecked, you'll download every image that can be found with the tags you en
 Check this option if you want to automatically open the folder with the downloaded images at the end of the download.
 
 ### Fast Download
-Because Gelbooru cannot send 100 images at the speed of light, there is some delay to ensure that the data is correctly downloaded and the server doesn't block the process. You can use "Fast Download" to download a smaller amount of images faster (500-1000), but this will be less accurate and is more likely to crash.
+This function was made for gelbooru, it need to be fixed to work with danbooru. This does nothing.
 
 ## To Do List
 - Fix the tag function to download with multiple tag (50% done)
